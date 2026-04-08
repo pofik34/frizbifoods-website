@@ -5,19 +5,16 @@ const steps = [
     title: "Hazırlık: Taze Malzemelerin Uyumu",
     text: "Her şey, FrizbiFoods'un özel reçeteli, yumuşak ve pürüzsüz dokulu özel dairesel ekmeğiyle başlar. Müşterinin isteğine göre taze döner eti, gurme burger köftesi veya eriyen peynirler ve isteğe bağlı şarküteri ürünleri veya çikolatalı dondurma çeşitleri ekmeğin tam merkezine yerleştirilir. Malzemeler ekmeğin içinde kaldığı için hazırlık aşamasında bile hijyen maksimum seviyededir.",
     image: "/images/original/004-816x419.png",
-    aiImage: "/images/process-prep-ai.svg",
   },
   {
     title: "Mühürleme: Frizbi-Press Teknolojisi ile",
     text: "Hazırlanan diskler, markamıza özel Frizbi-Press makinesine yerleştirilir. Makine, ekmeğin kenarlarını yüksek ısı ve basınçla birbirine kaynatır. Bu işlem, içindeki tüm sosu ve lezzeti hapseder. Sadece kısa bir sürede ekmeğin dışı altın sarısı bir çıtırlığa ulaşır, içi ise sıcak ve sulu kalır.",
     image: "/images/original/009-816x457.png",
-    aiImage: "/images/process-seal-ai.svg",
   },
   {
     title: "Sunum: Akmayan, Kokmayan Lezzet Deneyimi",
     text: "FrizbiFoods'un gerçek farkı tüketim anında ortaya çıkar. Tamamen kapalı ekmek yapısı sayesinde soslar kıyafete damlamaz, malzemeler arabadan veya elden düşmez. Yürürken, araç kullanırken veya ofiste dökülme endişesi olmadan konforlu bir hızlı yemek deneyimi sunulur.",
     image: "/images/original/0005-1-816x473.png",
-    aiImage: "/images/process-serve-ai.svg",
   },
 ];
 
@@ -34,21 +31,14 @@ export function ProcessSteps() {
       </div>
       <div className="grid gap-5 lg:grid-cols-3">
         {steps.map((step) => (
-          <article key={step.title} className="section-card relative overflow-hidden">
-            <Image
-              src={step.image}
-              alt={step.title}
-              width={1000}
-              height={700}
-              className="h-44 w-full object-cover"
-            />
-            <div className="absolute right-4 top-4 rounded-lg border border-white/50 bg-white/85 p-1">
+          <article key={step.title} className="section-card overflow-hidden">
+            <div className="overflow-hidden">
               <Image
-                src={step.aiImage}
-                alt={`${step.title} AI konsept`}
-                width={66}
-                height={50}
-                className="h-12 w-16 rounded-md object-cover"
+                src={step.image}
+                alt={step.title}
+                width={1000}
+                height={700}
+                className="h-44 w-full object-cover object-center"
               />
             </div>
             <div className="space-y-3 p-5">

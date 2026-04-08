@@ -29,23 +29,14 @@ export function FranchiseSection() {
             Bayilik Formu İçin Mail Gönder
           </a>
         </div>
-        <div className="relative flex items-center">
+        <div className="overflow-hidden rounded-2xl">
           <Image
             src="/images/original/2211-765x1024.png"
             alt="FrizbiFoods bayilik orijinal görseli"
             width={1000}
             height={900}
-            className="h-full min-h-64 w-full rounded-2xl object-cover"
+            className="h-full min-h-64 w-full object-cover object-center"
           />
-          <div className="absolute bottom-4 left-4 rounded-lg border border-white/50 bg-white/85 p-1">
-            <Image
-              src="/images/franchise-ai.svg"
-              alt="FrizbiFoods AI bayilik konsepti"
-              width={84}
-              height={64}
-              className="h-14 w-20 rounded-md object-cover"
-            />
-          </div>
         </div>
       </div>
     </section>

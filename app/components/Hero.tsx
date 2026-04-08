@@ -31,24 +31,15 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <div className="section-card relative overflow-hidden p-3">
+      <div className="overflow-hidden rounded-2xl border border-orange-100/80 bg-white shadow-[0_20px_45px_-25px_rgba(251,113,34,0.35)]">
         <Image
           src="/images/ai-frizbi-doner.png"
           alt="Frizbi döner yapay zeka görseli"
           width={1200}
           height={900}
           priority
-          className="h-[320px] w-full scale-110 rounded-2xl object-cover object-center sm:h-[420px]"
+          className="h-[320px] w-full object-cover object-[center_38%] sm:h-[420px]"
         />
-        <div className="absolute bottom-5 left-5 rounded-xl border border-white/40 bg-white/90 p-2 shadow-lg backdrop-blur">
-          <Image
-            src="/images/original/2-1280x800.png"
-            alt="FrizbiFoods orijinal görseli"
-            width={140}
-            height={100}
-            className="h-16 w-24 rounded-lg object-cover"
-          />
-        </div>
       </div>
     </section>
   );
