@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FrizbiFoods Website
 
-## Getting Started
+Modern, mobile-first FrizbiFoods kurumsal sitesi (`Next.js + TypeScript + Tailwind CSS`).
 
-First, run the development server:
+## Local Gelistirme
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Siteyi tarayicida ac:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build Komutlari
 
-## Learn More
+```bash
+npm run build
+npm run start
+npm run lint
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Proje Yapisi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/page.tsx`: Ana landing sayfa
+- `app/components/*`: Hero, surec, bayilik, iletisim, navbar, footer bileşenleri
+- `public/images/*`: AI gorsel yer tutuculari (istersen gercek gorsellerle degistir)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## GitHub'a Yukleme
 
-## Deploy on Vercel
+1. GitHub'da yeni repo olustur (onerilen ad: `frizbifoods-website`).
+2. Asagidaki komutlari proje klasorunde calistir:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+git init
+git add .
+git commit -m "Build modern FrizbiFoods website"
+git branch -M main
+git remote add origin https://github.com/<kullanici-adin>/frizbifoods-website.git
+git push -u origin main
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Vercel Deploy
+
+1. [Vercel](https://vercel.com/) hesabinda **Add New Project** sec.
+2. GitHub reponu bagla ve `frizbifoods-website` reposunu sec.
+3. Framework otomatik olarak `Next.js` algilanir.
+4. **Deploy** butonuna bas.
+5. Deploy bittiginde canli URL olusur (`https://...vercel.app`).
+
+Opsiyonel:
+- Sonraki push'larda production deploy otomatik guncellenir.
+- Ozel domain eklemek icin Vercel `Domains` bolumunu kullan.

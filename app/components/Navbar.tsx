@@ -1,0 +1,54 @@
+"use client";
+
+import { useState } from "react";
+
+const links = [
+  { href: "#lezzet", label: "Lezzet" },
+  { href: "#surec", label: "Surec" },
+  { href: "#bayilik", label: "Bayilik" },
+  { href: "#iletisim", label: "Iletisim" },
+];
+
+export function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <header className="sticky top-0 z-40 border-b border-orange-100/80 bg-white/85 backdrop-blur-xl">
+      <div className="section-shell flex items-center justify-between py-4">
+        <a href="#" className="font-[var(--font-display)] text-xl font-bold tracking-tight">
+          FrizbiFoods
+        </a>
+        <button
+          type="button"
+          className="rounded-full border border-orange-200 px-4 py-2 text-sm font-medium md:hidden"
+          onClick={() => setOpen((prev) => !prev)}
+          aria-expanded={open}
+          aria-label="Menuyu ac veya kapat"
+        >
+          Menu
+        </button>
+        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+          {links.map((item) => (
+            <a key={item.href} href={item.href} className="transition hover:text-orange-600">
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+      {open && (
+        <nav className="section-shell flex flex-col gap-3 pb-4 text-sm font-medium md:hidden">
+          {links.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="rounded-xl border border-orange-100 bg-white px-4 py-2"
+              onClick={() => setOpen(false)}
+            >
+              {item.label}
+            </a>
+          ))}
+        </nav>
+      )}
+    </header>
+  );
+}
