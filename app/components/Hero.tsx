@@ -33,17 +33,17 @@ export function Hero() {
       </div>
       <div className="section-card relative overflow-hidden p-3">
         <Image
-          src="/images/original/2-1280x800.png"
-          alt="FrizbiFoods orijinal hero görseli"
+          src="/images/ai-frizbi-doner.png"
+          alt="Frizbi döner yapay zeka görseli"
           width={1200}
           height={900}
           priority
           className="h-[320px] w-full rounded-2xl object-cover sm:h-[420px]"
         />
-        <div className="absolute bottom-5 left-5 rounded-xl border border-white/40 bg-white/85 p-2 shadow-lg backdrop-blur">
+        <div className="absolute bottom-5 left-5 rounded-xl border border-white/40 bg-white/90 p-2 shadow-lg backdrop-blur">
           <Image
-            src="/images/hero-ai.svg"
-            alt="FrizbiFoods AI konsept görseli"
+            src="/images/original/2-1280x800.png"
+            alt="FrizbiFoods orijinal görseli"
             width={140}
             height={100}
             className="h-16 w-24 rounded-lg object-cover"
