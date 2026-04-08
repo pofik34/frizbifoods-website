@@ -8,7 +8,7 @@ import { ProcessSteps } from "./components/ProcessSteps";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top_right,_#ffe6da,_#fffaf7_45%,_#ffffff_80%)]">
+    <div className="relative min-h-[100dvh] bg-[radial-gradient(circle_at_top_right,_#ffe6da,_#fffaf7_45%,_#ffffff_80%)]">
       <div className="pointer-events-none absolute -left-28 top-16 h-80 w-80 rounded-full bg-orange-200/35 blur-3xl" />
       <div className="pointer-events-none absolute right-0 top-1/3 h-96 w-96 rounded-full bg-rose-200/30 blur-3xl" />
       <div className="pointer-events-none absolute -bottom-24 left-1/3 h-80 w-80 rounded-full bg-amber-200/30 blur-3xl" />
