@@ -16,7 +16,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "FrizbiFoods | Yeni Nesil Fast Food",
   description:
-    "Sosu akmayan, dokulmeyen, disi citir ici efsane FrizbiFoods lezzetleri.",
+    "Sosu akmayan, dökülmeyen, dışı çıtır içi efsane FrizbiFoods lezzetleri.",
 };
 
 export default function RootLayout({

@@ -8,20 +8,20 @@ export function Hero() {
           FrizbiFoods Lezzeti
         </p>
         <h1 className="font-[var(--font-display)] text-4xl font-extrabold leading-tight sm:text-5xl">
-          Siradisi bir lezzet deneyimi icin{" "}
+          Sıradışı bir lezzet deneyimi için{" "}
           <span className="gradient-text">FrizbiFoods</span>
         </h1>
         <p className="max-w-xl text-base leading-7 text-zinc-700 sm:text-lg">
-          Siradan atistirmaliklardan sikildiniz mi? Sosu akmayan, dokulmeyen, disi citir ici
-          efsane FrizbiFoods lezzetleriyle tanisin. Donerden burgere, tatlidan cig kofteye her sey
-          simdi tamamen kapali ve el yakmayan formunda.
+          Sıradan atıştırmalıklardan sıkıldınız mı? Sosu akmayan, dökülmeyen, dışı çıtır içi
+          efsane FrizbiFoods lezzetleriyle tanışın. Dönerden burgere, tatlıdan çiğ köfteye her şey
+          şimdi tamamen kapalı ve el yakmayan formunda.
         </p>
         <div className="flex flex-wrap gap-3">
           <a
             href="#iletisim"
             className="rounded-full bg-zinc-950 px-6 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800"
           >
-            Iletisime Gec
+            İletişime Geç
           </a>
           <a
             href="#bayilik"
@@ -33,13 +33,22 @@ export function Hero() {
       </div>
       <div className="section-card relative overflow-hidden p-3">
         <Image
-          src="/images/hero-ai.svg"
-          alt="FrizbiFoods modern fast food sunumu"
+          src="/images/original/2-1280x800.png"
+          alt="FrizbiFoods orijinal hero görseli"
           width={1200}
           height={900}
           priority
           className="h-[320px] w-full rounded-2xl object-cover sm:h-[420px]"
         />
+        <div className="absolute bottom-5 left-5 rounded-xl border border-white/40 bg-white/85 p-2 shadow-lg backdrop-blur">
+          <Image
+            src="/images/hero-ai.svg"
+            alt="FrizbiFoods AI konsept görseli"
+            width={140}
+            height={100}
+            className="h-16 w-24 rounded-lg object-cover"
+          />
+        </div>
       </div>
     </section>
   );

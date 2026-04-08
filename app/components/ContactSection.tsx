@@ -3,9 +3,9 @@ export function ContactSection() {
     <section id="iletisim" className="section-shell py-10 md:py-14">
       <div className="grid gap-5 lg:grid-cols-2">
         <article className="section-card p-7 sm:p-9">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">Iletisim</p>
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">İletişim</p>
           <h2 className="mt-3 font-[var(--font-display)] text-3xl font-bold sm:text-4xl">
-            Bize ulasin
+            Bize ulaşın
           </h2>
           <ul className="mt-6 space-y-4 text-zinc-700">
             <li>
@@ -22,11 +22,11 @@ export function ContactSection() {
             </li>
             <li>
               <span className="block text-xs uppercase tracking-wider text-zinc-500">Adres</span>
-              <p className="text-lg font-semibold text-zinc-900">Adapazari / Sakarya</p>
+              <p className="text-lg font-semibold text-zinc-900">Adapazarı / Sakarya</p>
             </li>
             <li>
               <span className="block text-xs uppercase tracking-wider text-zinc-500">
-                Calisma Saatleri
+                Çalışma Saatleri
               </span>
               <p className="text-lg font-semibold text-zinc-900">10:00 - 18:00</p>
             </li>
@@ -34,9 +34,9 @@ export function ContactSection() {
         </article>
         <article className="section-card p-7 sm:p-9">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">
-            Hizli talep formu
+            Hızlı talep formu
           </p>
-          <h3 className="mt-3 font-[var(--font-display)] text-2xl font-bold">Sizi arayalim</h3>
+          <h3 className="mt-3 font-[var(--font-display)] text-2xl font-bold">Sizi arayalım</h3>
           <form className="mt-6 space-y-3">
             <input
               type="text"
@@ -49,7 +49,7 @@ export function ContactSection() {
               className="w-full rounded-xl border border-orange-100 bg-white px-4 py-3 text-sm outline-none ring-orange-500 focus:ring-2"
             />
             <textarea
-              placeholder="Mesajiniz"
+              placeholder="Mesajınız"
               rows={4}
               className="w-full rounded-xl border border-orange-100 bg-white px-4 py-3 text-sm outline-none ring-orange-500 focus:ring-2"
             />
@@ -57,7 +57,7 @@ export function ContactSection() {
               type="submit"
               className="w-full rounded-xl bg-zinc-900 px-4 py-3 text-sm font-semibold text-white transition hover:bg-zinc-800"
             >
-              Gonder
+              Gönder
             </button>
           </form>
         </article>

@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const links = [
   { href: "#lezzet", label: "Lezzet" },
-  { href: "#surec", label: "Surec" },
+  { href: "#surec", label: "Süreç" },
   { href: "#bayilik", label: "Bayilik" },
-  { href: "#iletisim", label: "Iletisim" },
+  { href: "#iletisim", label: "İletişim" },
 ];
 
 export function Navbar() {
@@ -15,7 +16,14 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-orange-100/80 bg-white/85 backdrop-blur-xl">
       <div className="section-shell flex items-center justify-between py-4">
-        <a href="#" className="font-[var(--font-display)] text-xl font-bold tracking-tight">
+        <a href="#" className="flex items-center gap-2 font-[var(--font-display)] text-xl font-bold tracking-tight">
+          <Image
+            src="/images/original/logos-240x160.png"
+            alt="FrizbiFoods logo"
+            width={36}
+            height={24}
+            className="h-8 w-auto"
+          />
           FrizbiFoods
         </a>
         <button
@@ -23,9 +31,9 @@ export function Navbar() {
           className="rounded-full border border-orange-200 px-4 py-2 text-sm font-medium md:hidden"
           onClick={() => setOpen((prev) => !prev)}
           aria-expanded={open}
-          aria-label="Menuyu ac veya kapat"
+          aria-label="Menüyü aç veya kapat"
         >
-          Menu
+          Menü
         </button>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
           {links.map((item) => (

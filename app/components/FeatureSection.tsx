@@ -1,7 +1,7 @@
 const features = [
-  { title: "10 saniyede muhurlenir", desc: "Ozel Frizbi-Press teknolojisiyle hizli hazirlik." },
-  { title: "Sifir dokulme deneyimi", desc: "Kapali form sayesinde soslar kiyafete damlamaz." },
-  { title: "Her yerde rahat tuketim", desc: "Ofiste, aracta veya yururken konforlu deneyim." },
+  { title: "10 saniyede mühürlenir", desc: "Özel Frizbi-Press teknolojisiyle hızlı hazırlık." },
+  { title: "Sıfır dökülme deneyimi", desc: "Kapalı form sayesinde soslar kıyafete damlamaz." },
+  { title: "Her yerde rahat tüketim", desc: "Ofiste, araçta veya yürürken konforlu deneyim." },
 ];
 
 export function FeatureSection() {
@@ -9,18 +9,18 @@ export function FeatureSection() {
     <section id="lezzet" className="section-shell py-10 md:py-14">
       <div className="section-card p-7 sm:p-10">
         <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-orange-700">
-          Gelecegin atistirmaligi
+          Geleceğin atıştırmalığı
         </p>
         <h2 className="font-[var(--font-display)] text-3xl font-bold sm:text-4xl">
-          Dunyada bir ilk olan ozel FrizbiFoods gida teknolojisi
+          Dünyada bir ilk olan özel FrizbiFoods gıda teknolojisi
         </h2>
         <p className="mt-4 max-w-4xl leading-7 text-zinc-700">
-          Aperatif yiyecekleriniz artik sadece 10 saniyede muhurlenerek onunuze geliyor. Tamamen
-          kapali formu sayesinde dokulme ve kirlenme riskini ortadan kaldiran bu inovatif tasarim;
-          ofiste, aracta veya yururken favori soslarinizin tadini kiyafetlerinizi dusunmeden
-          cikarmaniza olanak taniyor. Ozel ekmek yapisi ve benzersiz kapatma teknigi, icindeki
-          malzemelerin isi ve tazeligini uzun sure korurken; klasik donerden hamburgere, tatlidan
-          cig kofteye uzanan genis urun yelpazesiyle her damak tadina hitap eden, essiz bir
+          Aperatif yiyecekleriniz artık sadece 10 saniyede mühürlenerek önünüze geliyor. Tamamen
+          kapalı formu sayesinde dökülme ve kirlenme riskini ortadan kaldıran bu inovatif tasarım;
+          ofiste, araçta veya yürürken favori soslarınızın tadını kıyafetlerinizi düşünmeden
+          çıkarmanıza olanak tanıyor. Özel ekmek yapısı ve benzersiz kapatma tekniği, içindeki
+          malzemelerin ısı ve tazeliğini uzun süre korurken; klasik dönerden hamburgere, tatlıdan
+          çiğ köfteye uzanan geniş ürün yelpazesiyle her damak tadına hitap eden, eşsiz bir
           gastronomi deneyimi sunuyor.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

@@ -9,34 +9,43 @@ export function FranchiseSection() {
             Bayilik / Franchising
           </p>
           <h2 className="mt-3 font-[var(--font-display)] text-3xl font-bold sm:text-4xl">
-            Turkiye genelinde hizla buyuyen FrizbiFoods ailesine katilin
+            Türkiye genelinde hızla büyüyen FrizbiFoods ailesine katılın
           </h2>
           <p className="mt-4 leading-7 text-zinc-700">
-            Gastronomi dunyasinin en yenilikci ve karli yatirim firsatini yakalayin. Anahtar
-            teslim bayilik paketimizle size sadece dukkanin kapisini acmak kaliyor; ozel
-            Frizbi-Press makinesinden dikkat cekici ic-dis mekan reklam materyallerine ve hazir
-            menu iceriklerine kadar tum operasyonel destegi eksiksiz sagliyoruz.
+            Gastronomi dünyasının en yenilikçi ve karlı yatırım fırsatını yakalayın. Anahtar
+            teslim bayilik paketimizle size sadece dükkanın kapısını açmak kalıyor; özel
+            Frizbi-Press makinesinden dikkat çekici iç-dış mekan reklam materyallerine ve hazır
+            menü içeriklerine kadar tüm operasyonel desteği eksiksiz sağlıyoruz.
           </p>
           <p className="mt-4 leading-7 text-zinc-700">
-            Sosu akmayan, dokulmeyen ve her ortamda kolayca tuketilen bu benzersiz konseptle, dusuk
-            maliyet ve yuksek kazanc avantajini kullanarak bolgenizin en populer aperatif fastfood
-            lezzet duragi olmaya hazir olun.
+            Sosu akmayan, dökülmeyen ve her ortamda kolayca tüketilen bu benzersiz konseptle, düşük
+            maliyet ve yüksek kazanç avantajını kullanarak bölgenizin en popüler aperatif fastfood
+            lezzet durağı olmaya hazır olun.
           </p>
           <a
             href="mailto:info@frizbifoods.com"
             className="mt-6 inline-flex rounded-full bg-orange-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-700"
           >
-            Bayilik Formu icin Mail Gonder
+            Bayilik Formu İçin Mail Gönder
           </a>
         </div>
-        <div className="flex items-center">
+        <div className="relative flex items-center">
           <Image
-            src="/images/franchise-ai.svg"
-            alt="FrizbiFoods bayilik noktasi konsepti"
+            src="/images/original/2211-765x1024.png"
+            alt="FrizbiFoods bayilik orijinal görseli"
             width={1000}
             height={900}
             className="h-full min-h-64 w-full rounded-2xl object-cover"
           />
+          <div className="absolute bottom-4 left-4 rounded-lg border border-white/50 bg-white/85 p-1">
+            <Image
+              src="/images/franchise-ai.svg"
+              alt="FrizbiFoods AI bayilik konsepti"
+              width={84}
+              height={64}
+              className="h-14 w-20 rounded-md object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>
