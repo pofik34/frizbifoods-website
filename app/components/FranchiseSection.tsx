@@ -23,7 +23,7 @@ export function FranchiseSection() {
             lezzet durağı olmaya hazır olun.
           </p>
           <a
-            href="mailto:info@frizbifoods.com"
+            href="#iletisim"
             className="mt-6 inline-flex rounded-full bg-orange-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-orange-700"
           >
             Bayilik Formu İçin Mail Gönder

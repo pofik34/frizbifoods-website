@@ -16,13 +16,13 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-orange-100/80 bg-white/85 backdrop-blur-xl">
       <div className="section-shell flex items-center justify-between py-4">
-        <a href="#" className="flex items-center gap-3 font-[var(--font-display)] text-2xl font-bold tracking-tight">
+        <a href="#" className="flex items-center gap-4 font-[var(--font-display)] text-3xl font-bold tracking-tight sm:text-4xl">
           <Image
             src="/images/original/logos-240x160.png"
             alt="FrizbiFoods logo"
-            width={58}
-            height={40}
-            className="h-11 w-auto"
+            width={88}
+            height={60}
+            className="h-14 w-auto sm:h-16"
           />
           <span>
             <span className="text-red-600">frizbi</span>

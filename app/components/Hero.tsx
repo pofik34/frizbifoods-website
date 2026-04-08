@@ -38,7 +38,7 @@ export function Hero() {
           width={1200}
           height={900}
           priority
-          className="h-[320px] w-full rounded-2xl object-cover sm:h-[420px]"
+          className="h-[320px] w-full scale-110 rounded-2xl object-cover object-center sm:h-[420px]"
         />
         <div className="absolute bottom-5 left-5 rounded-xl border border-white/40 bg-white/90 p-2 shadow-lg backdrop-blur">
           <Image
